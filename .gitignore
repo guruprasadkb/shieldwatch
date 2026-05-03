@@ -1,6 +1,8 @@
 # Internal - never commit
 DO_NOT_CHECKIN.md
 CLAUDE.md
+TESTING_CHECKLIST.md
+GRADING_RUBRIC.md
 
 # Java
 backend/target/
