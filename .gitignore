@@ -1,0 +1,18 @@
+# Internal - never commit
+DO_NOT_CHECKIN.md
+CLAUDE.md
+
+# Java
+backend/target/
+*.class
+*.jar
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
