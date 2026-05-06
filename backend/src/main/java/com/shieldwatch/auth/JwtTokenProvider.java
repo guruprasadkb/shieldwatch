@@ -16,8 +16,8 @@ public class JwtTokenProvider {
     private final long expiration;
 
     public JwtTokenProvider(
-            @Value("${jwt.secret}") String secret,
-            @Value("${jwt.expiration}") long expiration) {
+            @Value("${jwt.secret:shieldwatch-secret-key-for-jwt-token-generation-minimum-256-bits-long}") String secret,
+            @Value("${jwt.expiration:86400000}") long expiration) {
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
         this.expiration = expiration;
     }
